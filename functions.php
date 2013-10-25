@@ -151,7 +151,7 @@ function twentythirteen_fonts_url() {
 
 	return $fonts_url;
 }
-
+get_template_part('hatchit/custom-functions');
 /**
  * Enqueue scripts and styles for the front end.
  *

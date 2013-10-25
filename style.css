@@ -1,18 +1,14 @@
 /*
-Theme Name: Twenty Thirteen
-Theme URI: http://wordpress.org/themes/twentythirteen
-Author: the WordPress team
-Author URI: http://wordpress.org/
-Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
-Version: 1.1
+Theme Name: Clayton Burgess
+Theme URI: http://yolodesign.com
+Author: the Yolo team
+Author URI: http://yolodesign.com
+Description: Custom Wordpress Theme for Clayton Burgess
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
-Text Domain: twentythirteen
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 */
+
 
 
 /**
@@ -110,6 +106,7 @@ body {
 	color: #141412;
 	line-height: 1.5;
 	margin: 0;
+	font-family: "open Sans", "Helvetica Neue",Helvetica,sans-serif;
 }
 
 a {
@@ -802,6 +799,11 @@ img.wp-smiley,
 
 .site-header {
 	position: relative;
+	background-repeat: repeat;
+	background-image: url('img/header-bg.jpg');
+	background-color: #000;
+	
+
 }
 
 .site-header .home-link {
@@ -809,8 +811,8 @@ img.wp-smiley,
 	display: block;
 	margin: 0 auto;
 	max-width: 1080px;
-	min-height: 230px;
-	padding: 0 20px;
+	min-height: 130px;
+	padding: 1px 20px 0;
 	text-decoration: none;
 	width: 100%;
 }
@@ -823,8 +825,13 @@ img.wp-smiley,
 	font-size: 60px;
 	font-weight: bold;
 	line-height: 1;
-	margin: 0;
-	padding: 58px 0 10px;
+	margin: 46px auto 0;
+	padding: 0;
+	background-image: url('img/logo.png');
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	width: 859px;
+	height: 66px;
 }
 
 .site-description {
@@ -922,10 +929,12 @@ ul.nav-menu li:hover > ul,
 
 /* Navbar */
 .navbar {
-	background-color: #f7f5e7;
+	background-color: #fff;
 	margin: 0 auto;
 	max-width: 1600px;
 	width: 100%;
+	background-image: url('img/orange-border.png');
+	background-repeat: repeat-x;
 }
 
 .site-header .search-form {

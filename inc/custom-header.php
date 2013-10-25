@@ -103,10 +103,10 @@ function twentythirteen_header_style() {
 	<?php
 		if ( ! empty( $header_image ) ) :
 	?>
-		.site-header {
+		/*.site-header {
 			background: url(<?php header_image(); ?>) no-repeat scroll top;
 			background-size: 1600px auto;
-		}
+		}*/
 	<?php
 		endif;
 
