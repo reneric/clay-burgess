@@ -1,0 +1,27 @@
+// Partials and Mixins
+@import "colors";
+@import "typography";
+@import "buttons";
+@import "mixins";
+@import "grid";
+
+
+
+// H Tags
+h1,h2,h3,h4,h5{
+	font-family:$font;
+}
+h1{
+	font-size:24px;
+	line-height: 26px;
+}
+h2{
+	font-size:18px;
+	line-height: 24px;
+}
+h3{}
+h4{}
+h5{}
+
+
+// Nav Menu
