@@ -40,4 +40,7 @@ function subnav($id){
 	echo '<ul class="clearfix">'.$subnav.'</ul>';
 	endif;
 }
+function page_footer(){
+	get_template_part('page', 'footer');
+}
 ?>

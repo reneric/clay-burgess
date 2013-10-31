@@ -345,7 +345,9 @@ img{
 	.content-section{
 		margin-right: 0;
 		padding-right: 0;
-		
+		h1{
+					@extend .profilehead;
+				}
 		.content{
 			section{
 				h1{
@@ -996,21 +998,6 @@ footer{
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

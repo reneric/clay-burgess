@@ -89,27 +89,7 @@ get_header(); ?>
 						<p>Under the Act, all malpractice claims against qualified health care providers, other than claims validly submitted to arbitration, must be reviewed by a medical review panel. La. Rev. Stat. Ann. § 40:1299.47 (West 1992 &amp; Supp. 1997). The procedure is discussed above in Expert Testimony.</p>
 					</div>
 				</div><!-- content -->
-				<section class="footer">
-					<h5>If you or a loved one is in need of legal assistance please CONTACT US NOW.</h5>
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="button orange">
-								<h5>Call Us</h5>
-								<p>1-877-234-7573</p>
-							</div><!-- button -->
-						</div>
-						<div class="col-sm-6">
-							<div class="button orange">
-								<h5>Fill Out Our</h5>
-								<p>Contact Form</p>
-							</div><!-- button -->
-						</div>
-					</div><!-- row -->
-					<span>The initial consultation is free of charge, and if we agree to accept your case, we will work on a contingent fee basis, which means we get paid for our services only if there is a monetary award or recovery of funds.</span>
-				</section>
-				<section class="bottom">
-					<p class="col-sm-12">Don't delay! You may have a valid claim and be entitled to compensation for your injuries, but a lawsuit must be filed before the statute of limitations expires.</p>
-				</section>
+				<?php page_footer(); ?>
 			</div>
 		</div><!-- #content -->
 	</div><!-- #primary -->

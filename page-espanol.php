@@ -54,27 +54,7 @@ get_header(); ?>
 							<p>Asistió a la universidad en la Universidad de Arizona en Tucson , Arizona. Después de recibir una licenciatura en Ciencias de la Universidad de Arizona en 1991 , asistió a la Paul M. Hebert Law Center de la Universidad Estatal de Louisiana. Él era un semi - finalista en la Louisiana State University Competición Trial Flory 1993-1994 y pasó a recibir su doctorado en leyes en 1994.</p>
 						</div><!-- bio-wrap -->
 					</section>
-					<section class="footer">
-						<h5>Si usted o un ser querido está en necesidad de asistencia legal, por favor póngase en contacto con nosotros ahora.</h5>
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="button orange">
-									<h5>llámenos</h5>
-									<p>1-877-234-7573</p>
-								</div><!-- button -->
-							</div>
-							<div class="col-sm-6">
-								<div class="button orange">
-									<h5>LLENE NUESTRA FORMULARIO</h5>
-									<p>DE CONTACTO</p>
-								</div><!-- button -->
-							</div>
-						</div><!-- row -->
-						<span>La consulta inicial es gratis, y si estamos de acuerdo en aceptar su caso, vamos a trabajar sobre una base de honorarios contingentes, lo que significa que nos pagan por nuestros servicios sólo si hay un premio monetario o la recuperación de los fondos.</span>
-					</section>
-					<section class="bottom">
-						<p class="col-sm-12">No se demore! Usted puede tener un reclamo válido y que tenga derecho a una compensación por sus lesiones, pero una demanda debe ser presentada antes de que expire el plazo de prescripción.</p>
-					</section>
+					<?php page_footer(); ?>
 				</div>
 			</div>
 		</div><!-- #content -->

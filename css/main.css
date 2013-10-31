@@ -336,7 +336,7 @@ img {
       color: #333333;
       line-height: 26px; }
 
-.profilehead, #primary[role="profile"] aside h1, #primary[role="profile"] .content-section .content section h1, #primary[role="practice"] #content[role="main"] .content-section section #bio-wrap h1 {
+.profilehead, #primary[role="profile"] aside h1, #primary[role="profile"] .content-section h1, #primary[role="profile"] .content-section .content section h1, #primary[role="practice"] #content[role="main"] .content-section section #bio-wrap h1 {
   font-family: "open Sans Condensed", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 72px;
   font-weight: 700;
