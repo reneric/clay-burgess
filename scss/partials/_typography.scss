@@ -1,21 +1,17 @@
 @import "fontface";
 // Fonts
-$font:"nimbus-sans", sans-serif;
-$lato:"lato", sans-serif;
+$basefonts:"Helvetica Neue",Helvetica,sans-serif;
+$font:"open Sans Condensed",$basefonts;
+$georgia: Georgia,serif;
+$lato:"lato",$basefonts;
 $droid:"droid-serif",serif;
-$swissBd: 'swis721_btbold','Helvetica Neue', helvetica, sans-serif;
-$swissRn: 'swis721_btroman','Helvetica Neue', helvetica, sans-serif;
-$swissLt: 'swis721_lt_btlight','Helvetica Neue', helvetica, sans-serif;
-$swissMd: 'swis721_md_btmedium','Helvetica Neue', helvetica, sans-serif;
-$swissOb: 'swiss_721_swaoblique','Helvetica Neue', helvetica, sans-serif;
-$swissTh: 'swis721_th_btthin','Helvetica Neue', helvetica, sans-serif;
-$opensans: 'Open Sans','Helvetica Neue', helvetica, sans-serif;
+$opensans: 'Open Sans',$basefonts;
 
 
 // Font Weights
 $thin:300;
 $normal:normal;
-$bold:bold;
+$bold:700;
 
 // Base Font
 $font-family: sans-serif;

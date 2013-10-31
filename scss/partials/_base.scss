@@ -5,7 +5,9 @@
 @import "mixins";
 @import "grid";
 
-
+.trans{
+	@include transition(color 0.35s ease);
+}
 
 // H Tags
 h1,h2,h3,h4,h5{

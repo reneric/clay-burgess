@@ -102,6 +102,11 @@ function twentythirteen_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 604, 270, true );
+	add_image_size( 'company-thumb', 140, 140, true );
+add_image_size( 'home-thumb', 401, 201, true );
+add_image_size( 'home-post', 294, 188, true );
+add_image_size( 'post-thumb', 367, 206, true );
+add_image_size( 'profile-thumb', 238, 238, true );
 
 	// This theme uses its own gallery styles.
 	add_filter( 'use_default_gallery_style', '__return_false' );

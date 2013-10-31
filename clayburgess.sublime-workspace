@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"backgrou",
+				"background-image"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
 				"no",
 				"no-repeat"
 			],
@@ -19,27 +27,11 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "scss/main.scss",
-			"settings":
-			{
-				"buffer_size": 50,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/main.css",
-			"settings":
-			{
-				"buffer_size": 193286,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 347.0,
 		"selected_items":
 		[
 			[
@@ -104,7 +96,62 @@
 	},
 	"file_history":
 	[
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/page-home.php",
 		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/footer.php",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/page-espanol.php",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/hatchit/custom-functions.php",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/header.php",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/page-news.php",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/page-contact.php",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/scss/partials/_typography.scss",
+		"/Users/rsimmons/Library/Application Support/Sublime Text 3/Packages/User/triangle.sublime-snippet",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/scss/partials/_base.scss",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/js/main.js",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/css/main.css",
+		"/Users/rsimmons/Library/Application Support/Sublime Text 3/Packages/User/os.sublime-snippet",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/style.css",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/scss/partials/_mixins.scss",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/scss/main.scss",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/books.png",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/boom.png",
+		"/Users/rsimmons/Library/Application Support/Sublime Text 3/Packages/User/left.sublime-snippet",
+		"/Users/rsimmons/Library/Application Support/Sublime Text 3/Packages/User/uppercase.sublime-snippet",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/areas-featured.png",
+		"/Users/rsimmons/Library/Application Support/Sublime Text 3/Packages/User/transition.sublime-snippet",
+		"/Users/rsimmons/Library/Application Support/Sublime Text 3/Packages/User/extend.sublime-snippet",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/form-box.png",
+		"/Users/rsimmons/Library/Application Support/Sublime Text 3/Packages/User/box.sublime-snippet",
+		"/Users/rsimmons/Library/Application Support/Sublime Text 3/Packages/User/button.sublime-snippet",
+		"/Users/rsimmons/Library/Application Support/Sublime Text 3/Packages/User/button.sublime-text",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/scss/partials/_colors.scss",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/clay.jpg",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/js/plugins.js",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/profile.png",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/chat.png",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/fb.png",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/ln.png",
+		"/Users/rsimmons/Library/Application Support/Sublime Text 3/Packages/User/border.sublime-snippet",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/air.png",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/civil.png",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/auto.png",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/auto.jpg",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/civil.jpg",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/classaction.jpg",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/medical.jpg",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/stripe-border.png",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/functions.php",
+		"/Users/rsimmons/Library/Application Support/Sublime Text 3/Packages/User/font.sublime-snippet",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/bg-pattern.png",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/scss/partials/_grid.scss",
+		"/Users/rsimmons/Library/Application Support/Sublime Text 3/Packages/User/wpimg.sublime-snippet",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/accidents.jpg",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/bg-pattern.jpg",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/intro.jpg",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/css/bootstrap-theme.css",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/css/bootstrap.css",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/orange-border.png",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/header-bg.jpg",
+		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/img/logo.png",
 		"/Users/rsimmons/Desktop/Development/Projects/clay-burgess/sftp-config.json",
 		"/Users/rsimmons/Desktop/Development/Projects/ClayBurgess/sftp-config.json",
 		"/Users/rsimmons/Desktop/Development/Projects/LoupeTheory/sftp-config.json",
@@ -166,7 +213,7 @@
 	],
 	"find":
 	{
-		"height": 32.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -180,127 +227,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"style",
-			"5",
-			"intro.blog",
-			"products",
-			"icon",
-			"description",
-			"protect",
-			".inner",
-			"cfcbcb",
-			".feature",
-			".icon",
-			"500px",
-			".slides",
-			"=&\",",
-			"24lFNae1",
-			"yolocli1",
-			"yoloclients",
-			"ftp",
-			"block",
-			"yellow",
-			"sandbox_example_theme_menu",
-			"sidebar_menu",
-			"recent",
-			"true",
-			"bold",
-			"h1",
-			"hello",
-			"font",
-			"false",
-			"company",
-			"140",
-			"size",
-			"entry_date",
-			"date",
-			"Swis721",
-			"BT",
-			"2",
-			"register",
-			"normal",
-			"the_excerpt",
-			"Swiss721BT",
-			"authorname",
-			"twentythirteen_entry_date",
-			"twentythirteen",
-			"twentythirteen_entry_meta",
-			"spectos_entry_meta",
-			"get_gravi",
-			"md",
-			"footer",
-			"sqm",
-			"hp_slider",
-			"document_downloads",
-			"sqs_solutions",
-			"features_headline",
-			"5_points",
-			"features",
-			"three_points",
-			"company",
-			"team_member",
-			"company_companies",
-			"contact_location",
-			"company_companies",
-			"<?",
-			"contact_location",
-			"repeater_field_name",
-			"contact_location",
-			"repeater_field_name",
-			"contact_location",
-			"repeater_field_name",
-			"normal",
-			"right",
-			"Communication",
-			"radius",
-			"measure",
-			"png",
-			".sqs",
-			"312c29",
-			"125px",
-			"ffd8",
-			"Swiss721BT",
-			"nielvs",
-			">\n",
-			"LinkedIn",
-			"bottom",
-			"auto",
-			"8950",
-			"100px",
-			"200px",
-			"5px",
-			"black",
-			"Swiss721BT",
-			"Swis72",
-			"Swiss721BT",
-			"margin0",
-			": ",
-			"block",
-			"c7bdba",
-			"middle",
+			"uppercase",
+			"ffffff",
+			"chat",
+			"text-indent: 18px;",
+			"1d94ae",
+			"ffffff",
+			"padding",
 			"margin",
-			"Swiss721BT",
-			"customer",
-			"Swiss721BT",
-			"\";",
-			"878787",
-			"why",
-			"manage",
+			"profile",
+			"align",
+			"text-align: 18px;",
+			"bio",
+			"profile",
+			"practice",
+			"282217",
+			"margin",
 			"content",
-			"f9f9f8",
-			"f5f4f3",
-			"black",
-			"f9f9f8",
+			"<!-- content -->",
+			"20px",
+			"margin",
 			"color",
-			"f5f4f3",
-			"f9f9f8",
-			";\n",
-			"888",
-			"f9f9f8",
-			"md",
-			"instantly",
-			"PROJECT_NAME",
-			">\n"
+			"css-triangle",
+			"8px",
+			"MORE",
+			"block",
+			"5s",
+			"class",
+			"_blank",
+			"cs",
+			"left",
+			"style",
+			"content: \"\\",
+			"left",
+			"1px",
+			"practice",
+			"Contact",
+			"Form",
+			"Profile",
+			"profile",
+			"As",
+			"left",
+			"hello",
+			"this",
+			"areaspan",
+			"data",
+			"attr",
+			"		<li data-height=\"\" class=\"active\">Personal Injury &amp; Offshore Accidents</li>\n						<li data-height=\"\">Medical Malpractice</li>\n						<li data-height=\"\">Truck &amp; Auto Accidents</li>\n						<li data-height=\"\">Class Action</li>\n						<li data-height=\"\">Civil Rights &amp; Employment</li>",
+			"bar",
+			"areaheight",
+			"content",
+			"918f8b",
+			"down",
+			"ff97",
+			"areas",
+			"Malpractice",
+			"Medical",
+			"Medica",
+			"Malpractice",
+			"Medical",
+			"Malpractice",
+			"Profile",
+			"1px",
+			"row",
+			"block",
+			"100",
+			"colote",
+			"height",
+			"hello",
+			"},...){",
+			"height",
+			"width",
+			"box",
+			"333333",
+			"none",
+			"color",
+			"font",
+			" $",
+			"normal",
+			"georgia",
+			"1d94ad",
+			"top",
+			"bbbbaaaa",
+			"hello",
+			"width",
+			"property",
+			"section",
+			"primary",
+			"main-naviga",
+			"primary",
+			"bio",
+			"photo",
+			"diameter",
+			"property",
+			"width",
+			"diameter",
+			"profilehead",
+			"					",
+			"line",
+			"home",
+			"div",
+			"idiv",
+			"000",
+			".site-title",
+			"$(",
+			"jpg",
+			"center",
+			"518px",
+			"272px",
+			"518px",
+			"bc360a",
+			"ff9700",
+			"left",
+			"3d5e6d",
+			"color",
+			"div",
+			"Accidents",
+			"Auto",
+			"Truck",
+			"Persona",
+			" </",
+			"Injury",
+			"amp",
+			"Offshore",
+			"Accidents",
+			"Offshore",
+			"accidents",
+			"300",
+			"margin"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -318,157 +372,13 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "scss/main.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 50,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								50,
-								50
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": true,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "css/main.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 193286,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": true,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 191.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -489,11 +399,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.2,
 			1.0
 		],
 		"rows":
@@ -523,20 +440,108 @@
 		"selected_items":
 		[
 			[
-				"main.css",
-				"css/main.css"
+				"header",
+				"header.php"
 			],
 			[
-				"sft",
-				"sftp-config.json"
+				"page-pro",
+				"page-profile.php"
+			],
+			[
+				"profi",
+				"page-profile.php"
+			],
+			[
+				"base",
+				"scss/partials/_base.scss"
+			],
+			[
+				"head",
+				"header.php"
+			],
+			[
+				"main",
+				"js/main.js"
+			],
+			[
+				"plugins",
+				"js/plugins.js"
+			],
+			[
+				"page-home",
+				"page-home.php"
 			],
 			[
 				"footer",
 				"footer.php"
 			],
 			[
+				"custom",
+				"hatchit/custom-functions.php"
+			],
+			[
+				"func",
+				"functions.php"
+			],
+			[
+				"mix",
+				"scss/partials/_mixins.scss"
+			],
+			[
+				"colors",
+				"scss/partials/_colors.scss"
+			],
+			[
+				"typo",
+				"scss/partials/_typography.scss"
+			],
+			[
+				"grid",
+				"scss/partials/_grid.scss"
+			],
+			[
+				"page",
+				"page.php"
+			],
+			[
 				"style",
-				"css/style.css"
+				"style.css"
+			],
+			[
+				"main.js",
+				"js/main.js"
+			],
+			[
+				"cust",
+				"hatchit/custom-functions.php"
+			],
+			[
+				"main.css",
+				"css/main.css"
+			],
+			[
+				"main.sc",
+				"scss/main.scss"
+			],
+			[
+				"fun",
+				"functions.php"
+			],
+			[
+				"typ",
+				"scss/partials/_typography.scss"
+			],
+			[
+				"color",
+				"scss/partials/_colors.scss"
+			],
+			[
+				"parti",
+				"scss/partials/_mixins.scss"
+			],
+			[
+				"sft",
+				"sftp-config.json"
 			],
 			[
 				"company",
@@ -545,10 +550,6 @@
 			[
 				"page-",
 				"page-home.php"
-			],
-			[
-				"typ",
-				"scss/partials/_typography.scss"
 			],
 			[
 				"ty",
@@ -579,10 +580,6 @@
 				"scss/main.scss"
 			],
 			[
-				"base",
-				"scss/partials/_base.scss"
-			],
-			[
 				"resp",
 				"css/responsive.css"
 			],
@@ -595,10 +592,6 @@
 				"css/main.css.map"
 			],
 			[
-				"header",
-				"header.php"
-			],
-			[
 				"slider",
 				"slider.php"
 			],
@@ -609,14 +602,6 @@
 			[
 				"respo",
 				"css/responsive.css"
-			],
-			[
-				"page",
-				"page-home.php"
-			],
-			[
-				"head",
-				"header.php"
 			],
 			[
 				"respon",
@@ -637,14 +622,6 @@
 			[
 				"single",
 				"single.php"
-			],
-			[
-				"func",
-				"functions.php"
-			],
-			[
-				"fun",
-				"functions.php"
 			],
 			[
 				"sty",
@@ -671,14 +648,6 @@
 				"company.php"
 			],
 			[
-				"main.sc",
-				"scss/main.scss"
-			],
-			[
-				"main.js",
-				"js/main.js"
-			],
-			[
 				"contact",
 				"contact.php"
 			],
@@ -689,14 +658,6 @@
 			[
 				"home",
 				"page-home.php"
-			],
-			[
-				"color",
-				"scss/partials/_colors.scss"
-			],
-			[
-				"colors",
-				"scss/partials/_colors.scss"
 			],
 			[
 				"main.",
@@ -735,7 +696,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 231.0,
 	"status_bar_visible": true,
 	"template_settings":
