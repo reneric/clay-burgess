@@ -2812,6 +2812,40 @@ footer.entry-meta {
 	footer .inner .site-info .call .container{
 		width: 100%;
 	}
+		
+		img{max-width: 100%;height: auto;}
+		#feeds .inner .row .post .excerpt p{font-size: 11px;}
+		#feeds .inner .row .post .entry-meta span{
+		font-size: 11px;
+		line-height: 20px;}
+		.site-info{
+		margin: 0px;}
+		footer .inner{
+			padding-bottom: 25px;
+		}
+		footer .inner .site-info .visit{
+			padding: 0 15px;
+		}
+		footer .inner .site-info .call{
+			padding: 0 15px;
+		}
+		#primary[role="home"] #content .row a{
+		display: block;
+		margin-bottom: 65px;}
+		#primary[role="home"] #content .row .accidents .content h4 span{
+		display: block;
+		line-height: 23px;
+		font-size: 15px;}
+		#feeds{
+		margin: 0 15px;}
+		#primary[role="home"] #content .row .accidents .content h4{
+		margin: -3px 0 0;}
+		#primary #content[role="main"]{
+		margin: 0 15px;}
+
+
+
+
 	#content .entry-header,
 	#content .entry-content,
 	#content .entry-summary,
