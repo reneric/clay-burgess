@@ -375,6 +375,7 @@ img {
     #primary[role="profile"] .content-section .content section:last-child {
       border-bottom: none; }
     #primary[role="profile"] .content-section .content section #photo-wrap #photo {
+      margin-bottom: 10px;
       float: left;
       width: 238px;
       height: 238px;
@@ -451,7 +452,7 @@ img {
       border-color: #adaba7; }
       #primary[role="profile"] .content-section .content section.bottom p {
         width: 827px;
-        height: 66px;
+        height: 86px;
         background-color: #1d94ad;
         font-family: "open Sans Condensed", "Helvetica Neue", Helvetica, sans-serif;
         font-size: 21px;
@@ -586,31 +587,41 @@ img {
   #primary[role="practice"] #content[role="main"] .content-section .content {
     padding-top: 25px;
     padding-bottom: 25px; }
-    #primary[role="practice"] #content[role="main"] .content-section .content div:first-child {
+    #primary[role="practice"] #content[role="main"] .content-section .content ul.practice-content {
+      -webkit-column-count: 2;
+      -webkit-column-gap: 50px;
+      -moz-column-count: 2;
+      -moz-column-gap: 50px;
+      column-count: 2;
+      column-gap: 50px;
+      margin-left: 0;
       padding-left: 0; }
-    #primary[role="practice"] #content[role="main"] .content-section .content div:last-child {
-      padding-right: 0;
-      padding-left: 40px; }
-    #primary[role="practice"] #content[role="main"] .content-section .content div h5 {
-      font-family: "open Sans Condensed", "Helvetica Neue", Helvetica, sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      color: #333333;
-      text-transform: uppercase;
-      margin: 0; }
-    #primary[role="practice"] #content[role="main"] .content-section .content div p {
-      font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-      font-size: 13px;
-      font-weight: normal;
-      color: #282217;
-      line-height: 19px;
-      text-indent: 30px;
-      text-align: justify; }
+      #primary[role="practice"] #content[role="main"] .content-section .content ul.practice-content:first-child {
+        padding-left: 0; }
+      #primary[role="practice"] #content[role="main"] .content-section .content ul.practice-content:last-child {
+        padding-right: 0;
+        padding-left: 0px; }
+      #primary[role="practice"] #content[role="main"] .content-section .content ul.practice-content li h5 {
+        font-family: "open Sans Condensed", "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #333333;
+        text-transform: uppercase;
+        margin: 0; }
+      #primary[role="practice"] #content[role="main"] .content-section .content ul.practice-content li p {
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: normal;
+        color: #282217;
+        line-height: 19px;
+        text-indent: 30px;
+        text-align: justify; }
   #primary[role="practice"] #content[role="main"] .content-section section #bio-wrap {
     border-top: 1px solid #adaba7;
     margin-top: 40px;
     padding-top: 40px; }
     #primary[role="practice"] #content[role="main"] .content-section section #bio-wrap #photo-wrap #photo {
+      margin-bottom: 10px;
       float: left;
       width: 238px;
       height: 238px;
@@ -687,7 +698,7 @@ img {
     border-color: #adaba7; }
     #primary[role="practice"] #content[role="main"] .content-section section.bottom p {
       width: 827px;
-      height: 66px;
+      height: 86px;
       background-color: #1d94ad;
       font-family: "open Sans Condensed", "Helvetica Neue", Helvetica, sans-serif;
       font-size: 21px;

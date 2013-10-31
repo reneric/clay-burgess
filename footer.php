@@ -17,15 +17,15 @@
 					<div class="col-sm-4 visit">
 						<div class="container">
 							<h5>Visit Our Office</h5>
-							<p>605 W. Congress Street</p>
-							<p>Lafayette, LA 70501</p>
+							<p><?php the_field('street_address','options'); ?></p>
+							<p><?php the_field('city','options'); ?></p>
 						</div>
 					</div><!-- visit -->
 					<div class="col-sm-4 social">
 						<div class="container">
 							<div class="links">
-								<a href="#" class="fb"></a>	
-								<a href="#" class="ln"></a>
+								<a target="_blank" href="<?php the_field('facebook','options'); ?>" class="fb"></a>	
+								<a target="_blank" href="<?php the_field('linked_in','options'); ?>" class="ln"></a>
 							</div>
 						</div>
 					</div><!-- social -->
@@ -35,15 +35,15 @@
 							<div class="content">
 								<div class="tr">
 									<p>Phone</p>
-									<span>337 . 234 . 7573</span>
+									<span><?php the_field("phone","options"); ?></span>
 								</div>
 								<div class="tr">
 									<p>Toll Free</p>
-									<span>337 . 234 . 7573</span>
+									<span><?php the_field("toll_free","options"); ?></span>
 								</div>
 								<div class="tr">
 									<p>Fax</p>
-									<span>337 . 234 . 7573</span>
+									<span><?php the_field("fax","options"); ?></span>
 								</div>
 							</div>
 						</div>

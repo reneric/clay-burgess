@@ -28,10 +28,7 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/img/chat.png" alt="alt text">
 			</div>
 			<aside class="col-sm-4">
-				<h1>Our<br> Mission</h1>
-				<div class="entry-content">
-					<p>Our mission is to provide our clients with the finest legal services through zealous and aggressive representation, personal attention, and professional diligence. We are forceful trial advocates and leave no stone unturned giving our clients the fairest compensation for their claims. Whether in the courtroom or in our research and pleadings, we vigorously fight for justice as we pursue our clients’ causes.</p>
-				</div>
+				<?php page_sidebar(); ?>
 			</aside>
 			<div class="col-sm-8 content-section">
 				<h1>Contact Us</h1>

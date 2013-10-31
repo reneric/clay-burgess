@@ -7,6 +7,15 @@
     border-top: $size solid #{setTriangleColor($direction, "top", $color)};
 }
  
+@mixin columns($col, $gap){
+-webkit-column-count: $col;
+-webkit-column-gap: $gap;
+-moz-column-count: $col;
+-moz-column-gap: $gap;
+column-count: $col;
+column-gap: $gap;
+}
+
 //Utility function to return the relevant colour depending on what type of arrow it is
 @function setTriangleColor($direction, $side, $color) {
  

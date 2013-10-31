@@ -28,10 +28,7 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/img/chat.png" alt="alt text">
 			</div>
 			<aside class="col-sm-4">
-				<h1>nuestra<br> misión</h1>
-				<div class="entry-content">
-					<p>Nuestra misión es proveer a nuestros clientes con los mejores servicios legales a través de representación entusiasta y agresivo, la atención personal y la diligencia profesional. Somos defensores de prueba contundentes y no dejar piedra sobre piedra que da a nuestros clientes la compensación justa para sus demandas. Ya sea en la sala o en nuestras investigaciones y escritos, luchamos vigorosamente por la justicia mientras buscamos las causas de nuestros clientes.</p>
-				</div>
+				<?php page_sidebar(); ?>
 			</aside>
 			<div class="col-sm-8 content-section">
 				<h1>visión general<br> empresa</h1>

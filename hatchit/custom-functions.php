@@ -43,4 +43,7 @@ function subnav($id){
 function page_footer(){
 	get_template_part('page', 'footer');
 }
+function page_sidebar(){
+	get_template_part('aside', 'sidebar');
+}
 ?>

@@ -368,6 +368,7 @@ img{
 					padding-bottom: 35px;
 					#photo-wrap{
 						#photo{
+							margin-bottom: 10px;
 							float: left;
 							@include round(238px, 10px solid #ffffff);
 							padding: 0;
@@ -433,7 +434,7 @@ img{
 					margin-bottom: 75px;
 					@include border(0 0 1px,solid,#adaba7);
 					p{
-						@include box(827px,66px, #1d94ad);
+						@include box(827px,86px, #1d94ad);
 						@include font($font,21px,$bold, #ffffff);
 						text-transform: uppercase;
 						text-align: center;
@@ -558,24 +559,29 @@ img{
 			.content{
 				padding-top: 25px;
 				padding-bottom: 25px;
-				div{
+				ul.practice-content{
+					@include columns(2, 50px);
+					margin-left: 0;
+					padding-left: 0;
 					&:first-child{
 						padding-left: 0;
 					}
 					&:last-child{
 						padding-right: 0;
-						padding-left: 40px;
+						padding-left: 0px;
 					}
-					h5{
-						@include font($font,16px,$bold, #333333);
-						text-transform: uppercase;
-						margin: 0;
-					}
-					p{
-						@include font($opensans,13px,normal, $font-color);
-						line-height: 19px;
-						text-indent: 30px;
-						text-align:justify;
+					li{
+						h5{
+							@include font($font,16px,$bold, #333333);
+							text-transform: uppercase;
+							margin: 0;
+						}
+						p{
+							@include font($opensans,13px,normal, $font-color);
+							line-height: 19px;
+							text-indent: 30px;
+							text-align:justify;
+						}
 					}
 				}
 			}
@@ -590,6 +596,7 @@ img{
 					padding-top: 40px;
 					#photo-wrap{
 						#photo{
+							margin-bottom: 10px;
 							float: left;
 							@include round(238px, 10px solid #ffffff);
 							padding: 0;
@@ -655,7 +662,7 @@ img{
 					margin-bottom: 75px;
 					@include border(0 0 1px,solid,#adaba7);
 					p{
-						@include box(827px,66px, #1d94ad);
+						@include box(827px,86px, #1d94ad);
 						@include font($font,21px,$bold, #ffffff);
 						text-transform: uppercase;
 						text-align: center;
