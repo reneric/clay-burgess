@@ -34,6 +34,8 @@ get_header(); ?>
 				while ( $custom_query->have_posts() ) : $custom_query->the_post();
 					$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
 					$thumb = wp_get_attachment_image($post_thumbnail_id, 'post-thumb' );
+					$category = get_the_category(); 
+					$catName = $category[0]->cat_name;
 				?>
 				<div class="post clearfix">
 					<div class="featured col-sm-5">
@@ -47,16 +49,16 @@ get_header(); ?>
 							<h4><?php the_title(); ?></h4>
 							<div class="entry-meta"><?php the_date(); ?> * <?php comments_popup_link( '<span class="leave-reply">' . __( '0 Comments', 'clayburgess' ) . '</span>', __( '1 Comment', 'clayburgess' ), __( 'View all % comments', 'clayburgess' ) ); ?></div>
 						</header>
-						<p class="excerpt"><?php the_excerpt(); ?></p>
+						<?php the_excerpt(); ?>
 						<footer>
-							<p class="post-meta">Filed under: <a href="#">Wrongful Death</a></p>
+							<p class="post-meta">Filed under: <a href="#"><?php echo $catName; ?></a></p>
 						</footer>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="readmore">read more</a>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="readmore">READ MORE</a>
 					</div>
 				</div><!-- post -->
 				<?php endwhile;endif; ?>
 			</div><!-- content-section -->
-			<aside class="col-sm-3">
+			<aside class="col-sm-3 main">
 				<div class="areas col-sm-12">
 					<h5>Practice Areas</h5>
 					<?php subnav(7); ?>
@@ -69,7 +71,9 @@ get_header(); ?>
 						<div class="meta">January 08, 2012 · 21 Comments</div>
 					</div>
 					<div class="contact-form">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/form-box.png" alt="alt text">
+						<a href="<?php bloginfo('url'); ?>/contact-us" target="" class="">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/form-box.png" alt="alt text">
+						</a>
 					</div>
 				</div><!-- areas -->
 				

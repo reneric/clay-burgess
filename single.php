@@ -1,6 +1,10 @@
 <?php
 /**
- * The template for displaying all single posts
+ * Template for single post
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages and that other
+ * 'pages' on your WordPress site will use a different template.
  *
  * @package WordPress
  * @subpackage Twenty_Thirteen
@@ -8,21 +12,71 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
+<div id="intro" class="row" role="news">
+	<div class="inner">
+		<ul class="slides">
+			<li style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/profile.png);">
+			</li>
+		</ul>
+	</div>
+</div>
+	<div id="primary" class="content-area" role="news">
+		<div id="primary-border"></div>
+		<div id="primary-bg"></div>
 		<div id="content" class="site-content" role="main">
-
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'content', get_post_format() ); ?>
-				<?php twentythirteen_post_nav(); ?>
-				<?php comments_template(); ?>
-
-			<?php endwhile; ?>
-
+			<!-- <div id="chat">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/chat.png" alt="alt text">
+			</div> -->
+			<div class="col-sm-9 content-section">
+			<?php 	while ( have_posts() ) : the_post(); 
+					$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+					$thumb = wp_get_attachment_image($post_thumbnail_id, 'post-thumb' );
+					$category = get_the_category(); 
+					$catName = $category[0]->cat_name;
+				?>
+				<div class="post clearfix single-post">
+					<div class="content">
+						<div class="featured-single  col-sm-4">
+							<a href="<?php the_permalink();?>" target="" class="">
+								<?php echo $thumb; ?>
+							</a>
+						</div>
+						<div class="entry-content col-sm-8">
+						<header class="">
+							<h4><?php the_title(); ?></h4>
+							<div class="entry-meta"><?php the_date(); ?> * <?php comments_popup_link( '<span class="leave-reply">' . __( '0 Comments', 'clayburgess' ) . '</span>', __( '1 Comment', 'clayburgess' ), __( 'View all % comments', 'clayburgess' ) ); ?></div>
+							<p class="post-meta">Filed under: <a href="#"><?php echo $catName; ?></a></p>
+							<p class="source">Source: <span><?php the_field("source"); ?></span></p>
+						</header>
+						<?php the_content(); ?>
+						</div>
+					</div>
+				</div><!-- post -->
+				<?php endwhile; ?>
+			</div><!-- content-section -->
+			<aside class="col-sm-3">
+				<div class="areas col-sm-12">
+					<h5>Practice Areas</h5>
+					<?php subnav(7); ?>
+					<div class="popular">
+						<h4>Popular Posts <span></span></h4>
+						<div class="thumb">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/books.png" alt="Books">
+						</div>
+						<h5>DUIS AUTE IRURE DOLOR:  IN VOLUPTATE VELIT ESSE</h5>
+						<div class="meta">January 08, 2012 · 21 Comments</div>
+					</div>
+					<div class="contact-form">
+						<a href="<?php bloginfo('url'); ?>/contact-us" target="" class="">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/form-box.png" alt="alt text">
+						</a>
+					</div>
+				</div><!-- areas -->
+				
+			</aside>
 		</div><!-- #content -->
 	</div><!-- #primary -->
+	
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>

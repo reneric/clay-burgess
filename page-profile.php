@@ -37,7 +37,7 @@ get_header(); ?>
 				<section>
 				<?php if(get_sub_field('image')){ ?>
 					<?php $thumb = wp_get_attachment_image(get_sub_field('image'), 'profile-thumb' ); ?>
-						<div id="photo-wrap" class="col-sm-4">
+						<div id="photo-wrap" class="clearfix col-sm-4">
 							<div id="photo">
 								<?php echo $thumb; ?>
 							</div>

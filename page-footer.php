@@ -5,7 +5,7 @@
 		<div class="col-sm-6">
 			<div class="button orange">
 				<h5>Call Us</h5>
-				<p><?php the_field("phone"); ?></p>
+				<p><?php the_field("phone_number",$id); ?></p>
 			</div><!-- button -->
 		</div>
 		<div class="col-sm-6">

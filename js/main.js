@@ -17,7 +17,10 @@ $area.each(function(){
 	$height = $this.height()/2;
 	$span.css('top',$height-5+'px');
 })
-
+$moreparent = $('#primary[role="news"] #content[role="main"] .content-section .post .featured a');
+$more = $('#primary[role="news"] #content[role="main"] .content-section .post .featured a span');
+$moreheight = $more.height();
+$more.css('lineHeight', $moreheight+'px');   
 // After <img> tags are loaded completely
 jQuery.fn.loadComplete = function (fn) {
     return this.each(function () {

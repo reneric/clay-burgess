@@ -45,10 +45,10 @@ get_header(); ?>
 				</header>
 				<div class="content clearfix">
 				<?php 	if(get_field('practice_sections')): ?>
-					<ul class="practice-content">
+					<ul class="practice-content<?php echo (get_field('layout') == 'col2') ? ' col2' : '';?>">
 					<?php 	while(has_sub_field('practice_sections')): ?>
 						<li>
-							<h5><?php the_sub_field('title'); ?></h5>
+							<?php if(get_sub_field('title')): ?><h5><?php the_sub_field('title'); ?></h5><?php endif; ?>
 							<?php the_sub_field('content'); ?>
 						</li>
 					<?php 	endwhile; ?>

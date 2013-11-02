@@ -455,14 +455,14 @@ img{
 	margin-top: -20px;
 	position: relative;
 	margin-left: 30px;
-	&:before{
-		@include css-triangle ($direction: "right", $size: 16px, $color: #24414e);
-		content: "";
-		display: block;
-		position: absolute;
-		left: 0;
-		top: -16px;
-	}
+	// &:before{
+	// 	@include css-triangle ($direction: "right", $size: 16px, $color: #24414e);
+	// 	content: "";
+	// 	display: block;
+	// 	position: absolute;
+	// 	left: 0;
+	// 	top: -16px;
+	// }
 	li{
 		a{
 			@include font($georgia,16px,normal, #ffffff);
@@ -560,8 +560,14 @@ img{
 				padding-top: 25px;
 				padding-bottom: 25px;
 				ul.practice-content{
-					@include columns(2, 50px);
+					&.col2{
+						@include columns(2, 50px);
+						li{
+							p{text-indent: 20px;}
+						}
+					}
 					margin-left: 0;
+					list-style: none;
 					padding-left: 0;
 					&:first-child{
 						padding-left: 0;
@@ -579,8 +585,15 @@ img{
 						p{
 							@include font($opensans,13px,normal, $font-color);
 							line-height: 19px;
-							text-indent: 30px;
 							text-align:justify;
+						}
+						ul{
+							margin-bottom: 25px;
+							margin-top: 5px;
+							li{
+								@include font($opensans,12px,normal, $font-color);
+								margin-bottom: 5px;
+							}
 						}
 					}
 				}
@@ -817,6 +830,82 @@ img{
 				max-width: 951px;
 				margin-bottom: 15px;
 				padding-bottom: 15px;
+
+				&.single-post{
+					.content{
+						header{
+							float: left;
+							padding-left: 0;
+							.post-meta{
+								margin-top: 0px;
+								display: block;
+								font-size: 9px;
+								margin-bottom: 0;
+							}
+							p.source{
+								display: block;
+								width: 100%;
+								margin-top: 0;
+								span{
+						
+								}
+							}
+						}
+						aside.post-sidebar{
+							padding: 0;
+							.widget-wrap{
+								ul.categories-list{
+									list-style: none;
+									margin: 0;
+									padding: 0;
+									li.categories{
+										@include font($font,15px,$bold, $font-color);
+										ul{
+											list-style: none;
+											margin: 0;
+											padding: 0;
+											li{
+												a{
+
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						.entry-content{
+							p{
+								float: left;
+							}
+							.post-meta{
+								font-size:11px;
+								@include font($opensans,10px,$bold, lighten(#7b797b,15%));
+								text-transform: uppercase;
+								letter-spacing: 0.05em;
+								margin-bottom: 0px;
+								margin-top: 10px;
+								a{
+									
+									@include font($georgia,12px,normal, darken(#7b797b,25%));
+									text-transform: capitalize;
+									font-style: italic;								}
+							}
+							.source{
+								@include font($opensans,10px,$bold, lighten(#7b797b,15%));
+								text-transform: uppercase;
+								letter-spacing: 0.05em;
+								margin-bottom: 10px;
+								span{
+									@include font($georgia,12px,normal, darken(#7b797b,25%));
+									font-style: italic;
+									text-transform: capitalize;
+
+								}
+							}
+						}
+					}
+				}
 				.featured{
 					padding-right: 25px;
 					padding-left: 0;
@@ -852,6 +941,41 @@ img{
 					}
 				}
 				.content{
+					.featured-single{
+					padding-right: 0px;
+					padding-left: 15px;
+					float: left;
+					a{
+						position: relative;
+						display: block;
+						max-width: 381px;
+						width: 100%;
+						img{
+							width: 100%;
+						}
+						span{
+							background-color: rgba(255,255,255,0.8);
+							position: absolute;
+							display: block;
+							$os:10px;
+							top:$os;
+							right:$os;
+							bottom:$os;
+							left:$os;
+							vertical-align: middle;
+							letter-spacing: 0.05em;
+							@include font($font,24px,$bold, #1d93ad);
+							line-height: 190px;
+							text-align:center;
+							opacity: 0;
+							@include transition(opacity .35s ease);
+							&:hover{
+								opacity: 1;
+								@include transition(opacity .35s ease);
+							}
+						}
+					}
+				}
 					padding-left: 0;
 					header{
 						margin-bottom: 10px;
@@ -876,6 +1000,7 @@ img{
 						p.post-meta{
 							@include font($georgia,12px,normal, #7b797b);
 							font-style: italic;
+							margin-bottom: 20px;
 							a{
 								@include font(inherit,inherit,inherit, inherit);
 								font-style: italic;

@@ -46,4 +46,7 @@ function page_footer(){
 function page_sidebar(){
 	get_template_part('aside', 'sidebar');
 }
+function post_sidebar(){
+	get_template_part('post', 'sidebar');
+}
 ?>

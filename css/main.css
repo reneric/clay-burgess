@@ -474,19 +474,6 @@ img {
   margin-top: -20px;
   position: relative;
   margin-left: 30px; }
-  .nav-menu .sub-menu:before,
-  .nav-menu .children:before {
-    width: 0;
-    height: 0;
-    border-left: 16px solid #24414e;
-    border-right: 16px solid transparent;
-    border-bottom: 16px solid transparent;
-    border-top: 16px solid transparent;
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: -16px; }
   .nav-menu .sub-menu li a,
   .nav-menu .children li a {
     font-family: Georgia, serif;
@@ -588,14 +575,18 @@ img {
     padding-top: 25px;
     padding-bottom: 25px; }
     #primary[role="practice"] #content[role="main"] .content-section .content ul.practice-content {
-      -webkit-column-count: 2;
-      -webkit-column-gap: 50px;
-      -moz-column-count: 2;
-      -moz-column-gap: 50px;
-      column-count: 2;
-      column-gap: 50px;
       margin-left: 0;
+      list-style: none;
       padding-left: 0; }
+      #primary[role="practice"] #content[role="main"] .content-section .content ul.practice-content.col2 {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 50px;
+        -moz-column-count: 2;
+        -moz-column-gap: 50px;
+        column-count: 2;
+        column-gap: 50px; }
+        #primary[role="practice"] #content[role="main"] .content-section .content ul.practice-content.col2 li p {
+          text-indent: 20px; }
       #primary[role="practice"] #content[role="main"] .content-section .content ul.practice-content:first-child {
         padding-left: 0; }
       #primary[role="practice"] #content[role="main"] .content-section .content ul.practice-content:last-child {
@@ -614,8 +605,16 @@ img {
         font-weight: normal;
         color: #282217;
         line-height: 19px;
-        text-indent: 30px;
         text-align: justify; }
+      #primary[role="practice"] #content[role="main"] .content-section .content ul.practice-content li ul {
+        margin-bottom: 25px;
+        margin-top: 5px; }
+        #primary[role="practice"] #content[role="main"] .content-section .content ul.practice-content li ul li {
+          font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 12px;
+          font-weight: normal;
+          color: #282217;
+          margin-bottom: 5px; }
   #primary[role="practice"] #content[role="main"] .content-section section #bio-wrap {
     border-top: 1px solid #adaba7;
     margin-top: 40px;
@@ -849,6 +848,67 @@ img {
     max-width: 951px;
     margin-bottom: 15px;
     padding-bottom: 15px; }
+    #primary[role="news"] #content[role="main"] .content-section .post.single-post .content header {
+      float: left;
+      padding-left: 0; }
+      #primary[role="news"] #content[role="main"] .content-section .post.single-post .content header .post-meta {
+        margin-top: 0px;
+        display: block;
+        font-size: 9px;
+        margin-bottom: 0; }
+      #primary[role="news"] #content[role="main"] .content-section .post.single-post .content header p.source {
+        display: block;
+        width: 100%;
+        margin-top: 0; }
+    #primary[role="news"] #content[role="main"] .content-section .post.single-post .content aside.post-sidebar {
+      padding: 0; }
+      #primary[role="news"] #content[role="main"] .content-section .post.single-post .content aside.post-sidebar .widget-wrap ul.categories-list {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        #primary[role="news"] #content[role="main"] .content-section .post.single-post .content aside.post-sidebar .widget-wrap ul.categories-list li.categories {
+          font-family: "open Sans Condensed", "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          color: #282217; }
+          #primary[role="news"] #content[role="main"] .content-section .post.single-post .content aside.post-sidebar .widget-wrap ul.categories-list li.categories ul {
+            list-style: none;
+            margin: 0;
+            padding: 0; }
+    #primary[role="news"] #content[role="main"] .content-section .post.single-post .content .entry-content p {
+      float: left; }
+    #primary[role="news"] #content[role="main"] .content-section .post.single-post .content .entry-content .post-meta {
+      font-size: 11px;
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      color: #a19fa1;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0px;
+      margin-top: 10px; }
+      #primary[role="news"] #content[role="main"] .content-section .post.single-post .content .entry-content .post-meta a {
+        font-family: Georgia, serif;
+        font-size: 12px;
+        font-weight: normal;
+        color: #3b3a3b;
+        text-transform: capitalize;
+        font-style: italic; }
+    #primary[role="news"] #content[role="main"] .content-section .post.single-post .content .entry-content .source {
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      color: #a19fa1;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px; }
+      #primary[role="news"] #content[role="main"] .content-section .post.single-post .content .entry-content .source span {
+        font-family: Georgia, serif;
+        font-size: 12px;
+        font-weight: normal;
+        color: #3b3a3b;
+        font-style: italic;
+        text-transform: capitalize; }
     #primary[role="news"] #content[role="main"] .content-section .post .featured {
       padding-right: 25px;
       padding-left: 0; }
@@ -890,6 +950,46 @@ img {
             transition: opacity 0.35s ease; }
     #primary[role="news"] #content[role="main"] .content-section .post .content {
       padding-left: 0; }
+      #primary[role="news"] #content[role="main"] .content-section .post .content .featured-single {
+        padding-right: 0px;
+        padding-left: 15px;
+        float: left; }
+        #primary[role="news"] #content[role="main"] .content-section .post .content .featured-single a {
+          position: relative;
+          display: block;
+          max-width: 381px;
+          width: 100%; }
+          #primary[role="news"] #content[role="main"] .content-section .post .content .featured-single a img {
+            width: 100%; }
+          #primary[role="news"] #content[role="main"] .content-section .post .content .featured-single a span {
+            background-color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            display: block;
+            top: 10px;
+            right: 10px;
+            bottom: 10px;
+            left: 10px;
+            vertical-align: middle;
+            letter-spacing: 0.05em;
+            font-family: "open Sans Condensed", "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #1d93ad;
+            line-height: 190px;
+            text-align: center;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s ease;
+            -moz-transition: opacity 0.35s ease;
+            -ms-transition: opacity 0.35s ease;
+            -o-transition: opacity 0.35s ease;
+            transition: opacity 0.35s ease; }
+            #primary[role="news"] #content[role="main"] .content-section .post .content .featured-single a span:hover {
+              opacity: 1;
+              -webkit-transition: opacity 0.35s ease;
+              -moz-transition: opacity 0.35s ease;
+              -ms-transition: opacity 0.35s ease;
+              -o-transition: opacity 0.35s ease;
+              transition: opacity 0.35s ease; }
       #primary[role="news"] #content[role="main"] .content-section .post .content header {
         margin-bottom: 10px; }
         #primary[role="news"] #content[role="main"] .content-section .post .content header h4 {
@@ -920,7 +1020,8 @@ img {
           font-size: 12px;
           font-weight: normal;
           color: #7b797b;
-          font-style: italic; }
+          font-style: italic;
+          margin-bottom: 20px; }
           #primary[role="news"] #content[role="main"] .content-section .post .content footer p.post-meta a {
             font-family: inherit;
             font-size: inherit;

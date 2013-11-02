@@ -1012,7 +1012,7 @@ ul.nav-menu li:hover > ul,
 }
 
 .entry-header,
-.entry-content,
+.entry-contents,
 .entry-summary,
 .entry-meta {
 	margin: 0 auto;
@@ -2613,8 +2613,12 @@ footer.entry-meta {
 	display: block;
 	margin: -10px auto 0;
 }
-
-
+#primary[role="news"] #content[role="main"] .content-section .post.single-post .content .entry-content p{
+	font-size:         14px;
+	line-height:         20px;}
+#primary[role="news"] #content[role="main"] .content-section .post.single-post .content header h4{
+	font-size:         30px;
+	line-height:         30px;}
 /**
  * 8.0 Media Queries
  * ----------------------------------------------------------------------------
@@ -2627,6 +2631,87 @@ footer.entry-meta {
 }
 
 @media (max-width: 1069px) {
+ul.nav-menu, div.nav-menu > ul{
+	padding: 0;
+}
+footer .site-info{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#main #primary aside div.entry-content{
+	padding-right: 45px;
+}
+#primary[role="home"] #content .row{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+#main #primary .content-section .content section #photo-wrap #photo {
+	width: 188px;
+	height: 188px;
+	-webkit-border-radius: 94px;
+	-moz-border-radius: 94px;
+	border-radius: 94px;
+}
+#primary[role="news"] #content[role="main"] .content-section .post .featured a span{
+
+}
+#main #primary[role="news"] #content[role="main"] .content-section{
+	padding: 0 15px;
+}
+#primary[role="home"] #content .row a{
+	padding-left: 10px;
+	padding-right: 10px;
+	height:280px;
+}
+#primary[role="home"] #content .row .accidents .content h4 {
+	margin-top: 5px;
+	
+
+	}
+#primary[role="home"] #content .row .accidents .content h4 span{
+	line-height: 21px;
+}
+#main #primary[role="news"] #content[role="main"] aside .areas .contact-form {
+	padding-right: 15px;
+}
+#main #primary #content[role="main"] aside .areas .contact-form img{max-width: 100%;}
+#main #primary .content-section .content section #photo-wrap #photo img{
+	max-width: 180px;
+	margin-left: -6px;
+	margin-top: -6px;
+}
+#primary[role="news"] #content[role="main"] aside{
+	padding-left:48px;
+	padding-right: 30px;
+}
+#primary[role="news"] #content[role="main"] aside .areas .popular{
+	width: 100%;
+	padding-right: 0px
+}
+#primary[role="news"] #content[role="main"] aside .areas .popular .thumb {
+	width: 100%;
+}
+#primary[role="news"] #content[role="main"] aside .areas .popular .thumb img{
+	max-width: 100%;
+}
+#main #primary #content[role="main"] aside.main{
+	padding-left: 15px;
+}
+#main #primary #content[role="main"] aside .areas .contact-form{}
+#main #primary #content[role="main"] aside .areas .contact-form img {
+	max-width: 100%;
+}
+#main #primary #content[role="main"] .content-section{
+	padding-right: 35px;
+}
+#main #primary[role="practice"] #content[role="main"] aside .featured {}
+#main #primary[role="practice"] #content[role="main"] aside .featured img{
+	max-width: 100%;
+}
+.nav-menu li a {
+padding: 0 13px;
+font-size: 18px;
+}
 	.sidebar img.alignleft,
 	.sidebar .wp-caption.alignleft {
 		margin-left: 0;
@@ -2800,6 +2885,62 @@ footer.entry-meta {
 }
 
 @media (max-width: 643px) {
+	#primary[role="practice"] {
+		padding-top: 20px;
+	}
+	#primary[role="news"] #content[role="main"] .content-section .post .featured{
+		padding: 0;
+	}
+	#primary[role="news"] #content[role="main"] aside .areas{
+		border-width: 0;
+		padding-left: 0;
+	}
+	#primary[role="news"] #content[role="main"] .content-section .post .content .featured-single{
+		
+	}
+	#primary[role="practice"] #content[role="main"] .content-section .content ul.practice-content.col2{
+		-webkit-column-count: 1;
+		-webkit-column-gap: 0;
+		-moz-column-count: 1;
+		-moz-column-gap: 0;
+		column-count: 1;
+		column-gap: 0;
+	}
+	#primary[role="practice"] #content[role="main"] aside{
+		margin-bottom:50px;
+	}
+	#primary[role="practice"] #content[role="main"] .content-section section.bottom p{
+		height: auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#main #primary #content[role="main"] aside .areas .contact-form{
+		display: none;
+	}
+	#chat{display: none;}
+	#main #primary[role="practice"] #content[role="main"] aside .featured{display: none;}
+	.profilehead, #primary[role="profile"] aside h1, #primary[role="profile"] .content-section h1, #primary[role="profile"] .content-section .content section h1, #primary[role="profile"] .content-section .content section h1, #primary[role="practice"] #content[role="main"] .content-section section #bio-wrap h1{font-size: 60px;line-height: 60px;}
+	#chat img{width: 150px}
+	#photo-wrap{
+		display: block;
+		float: none;
+		margin-left: -10px;
+	}
+	#primary[role="home"] #content .row a{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#primary[role="home"] #content .row{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#primary[role="profile"] .content-section .content section p{
+		font-size: 14px;
+		line-height: 24px;
+	}
+	#main #primary #content[role="main"] .content-section{
+		padding: 0;
+	}
 	.site-title {
 		font-size: 30px;
 		max-width: 98%;
@@ -2814,6 +2955,11 @@ footer.entry-meta {
 	}
 		
 		img{max-width: 100%;height: auto;}
+		#primary[role="profile"] aside div.entry-content{
+		padding: 0;}
+		#primary[role="profile"] aside div.entry-content p{
+
+		}
 		#feeds .inner .row .post .excerpt p{font-size: 11px;}
 		#feeds .inner .row .post .entry-meta span{
 		font-size: 11px;
@@ -2823,6 +2969,9 @@ footer.entry-meta {
 		footer .inner{
 			padding-bottom: 25px;
 		}
+		#content aside{
+			padding: 0;
+		}
 		footer .inner .site-info .visit{
 			padding: 0 15px;
 		}
@@ -2831,15 +2980,23 @@ footer.entry-meta {
 		}
 		#primary[role="home"] #content .row a{
 		display: block;
-		margin-bottom: 65px;}
-		#primary[role="home"] #content .row .accidents .content h4 span{
+		height: auto;
+		margin-bottom: 35px;}
+		#primary[role="home"] #content .row .accidents .content .featured{
+			width: 100%;
+		}
+		#primary[role="home"] #content .row a.areas{
+			padding-bottom: 45px;
+		}
+		#primary[role="home"] #content .row a.content h4 span{
 		display: block;
-		line-height: 23px;
-		font-size: 15px;}
+		
+		margin-top: 5px;
+		font-size: 40px;}
 		#feeds{
 		margin: 0 15px;}
-		#primary[role="home"] #content .row .accidents .content h4{
-		margin: -3px 0 0;}
+		#primary[role="home"] #content .row .accidents .content h4 {
+		margin: 5px 0 0;}
 		#primary #content[role="main"]{
 		margin: 0 15px;}
 
