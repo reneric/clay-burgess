@@ -27,6 +27,9 @@
 								<a target="_blank" href="<?php the_field('facebook','options'); ?>" class="fb"></a>	
 								<a target="_blank" href="<?php the_field('linked_in','options'); ?>" class="ln"></a>
 							</div>
+							<div id="searchform">
+								<?php get_search_form(); ?>
+							</div>
 						</div>
 					</div><!-- social -->
 					<div class="col-sm-4 call">

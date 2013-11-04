@@ -3,6 +3,14 @@
 a.nolink{
 
 }
+#chat{
+	opacity: .8;
+	cursor: pointer;
+	@include transition(all 0.3s ease-in-out);
+	&:hover{
+		opacity: 1;
+	}
+}
 a:hover{
 	text-decoration: none !important;
 }
@@ -49,9 +57,9 @@ img{
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
-			height: 518px;
+			height: 348px;
 			li{
-				height: 518px;
+				max-height: 100%;
 				opacity: 0;
 				@include transition(opacity .5s ease);
 				background-repeat: no-repeat;
@@ -63,9 +71,9 @@ img{
 	&[role="home"]{
 		.inner{
 			ul.slides{
-				height: 518px;
+				height: 348px;
 				li{
-					height: 518px;
+					height: 348px;
 				}
 			}
 		}
@@ -83,12 +91,12 @@ img{
 }
 
 #primary{
-	margin-top: 70px;
+	margin-top: 0px;
 	padding-top: 50px;
 	background-position:center top;
 	position: relative;
 	&[role="profile"], &[role="practice"], &[role="news"]{
-		margin-top:50px;
+		margin-top:0px;
 	}
 	div#primary-border{
 		background-image: url("../img/orange-border.png");
@@ -99,7 +107,7 @@ img{
 		top: 0;
 	}
 	&[role="profile"]{
-		margin-top: 40px;
+		margin-top: 0px;
 	}
 	div#primary-bg{
 		background-image: url("../img/bg-pattern.png");		
@@ -125,12 +133,45 @@ img{
 		}
 	}
 }
+#searchform{
+	padding-top: 110px;
+	max-width: 270px;
+	margin: 0 auto;
+	position: relative;
+	&:after{
+			content: "\f002";
+			display: block;
+			right: 10px;
+			font-weight: normal;
+			bottom: 10px;
+			font-family: fontawesome;
+			position: absolute;
+			color: #fff;
+		}
+	input[type="search"]{
+		@include font($georgia,15px,normal, #ffffff !important);
+		font-style: italic;
+		@include border-radius(3px);
+		border-width: 1px;
+		background-color: #5f889a;
+		position: relative !important;
+		display: block;
+	}
+	.screen-reader-text{
+		color: #ffffff;
+		text-indent: -500px;
+		display: block;
+		
+		
+	}
+}
 #primary[role="home"]{
+	padding-top: 0;
 	#content{
 		.row{
 			margin-bottom: 0px;
 			a{
-				margin-bottom: 55px;
+				margin-top: 55px;
 			}
 			.areas{
 				h5{
@@ -285,8 +326,28 @@ img{
 				}
 			}
 			.post{
+				&:hover {
+					.featured{
+						img{
+							// filter: none;	
+							// opacity: 1;
+							// -webkit-filter: grayscale(0);
+							// -moz-filter: grayscale(0);
+							// -ms-filter: grayscale(0); 
+							// -o-filter: grayscale(0);
+						}
+					}
+				}
 				.featured{
-					img{}
+					img{
+						max-width: 100%;
+						    // filter: Gray();
+						    // filter: url('#grayscale'); 
+						    // -webkit-filter: grayscale(100%); 
+						    // filter: grayscale(100%); /* future-proof */
+						@include transition(all 0.3s ease-in-out);
+						
+					}
 				}
 				h5{
 					@include font($font,17px,$bold, $font-color);

@@ -9,28 +9,94 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-
-		<?php if ( have_posts() ) : ?>
-
+<div id="intro" class="row" role="news">
+	<div class="inner flexslider">
+	<?php if(get_field('slider',11)): ?>
+		<ul class="slides">
+		<?php while(has_sub_field('slider',11)): ?>
+			<li style="background-image:url(<?php the_sub_field('slider_image',11); ?>);"></li>
+		<?php endwhile; ?>
+		</ul>
+	<?php endif; ?>
+	</div>
+</div>
+	<div id="primary" class="content-area" role="news">
+		<div id="primary-border"></div>
+		<div id="primary-bg"></div>
+		<div id="content" class="site-content clearfix" role="main">
+			<!-- <div id="chat">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/chat.png" alt="alt text">
+			</div> -->
+			<div class="col-sm-9 content-section">
 			<header class="page-header">
 				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentythirteen' ), get_search_query() ); ?></h1>
 			</header>
-
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
-
-			<?php twentythirteen_paging_nav(); ?>
-
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
-
+			<?php if ( have_posts() ) : 
+					$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+					if ( has_post_thumbnail()):
+					$thumb = wp_get_attachment_image($post_thumbnail_id, 'post-thumb' );
+					else:
+					$thumb = get_template_directory_uri().'/img/pen.png';
+					endif;
+					$category = get_the_category(); 
+					$catName = $category[0]->cat_name;
+				?>
+				<div class="post clearfix">
+					<div class="featured col-sm-5">
+						<a href="<?php the_permalink();?>" target="" class="">
+							<?php echo $thumb; ?>
+							<span>READ MORE</span>
+						</a>
+					</div>
+					<div class="content col-sm-7">
+						<header>
+							<h4><?php the_title(); ?></h4>
+							<div class="entry-meta"><?php the_date(); ?> * <?php comments_popup_link( '<span class="leave-reply">' . __( '0 Comments', 'clayburgess' ) . '</span>', __( '1 Comment', 'clayburgess' ), __( 'View all % comments', 'clayburgess' ) ); ?></div>
+						</header>
+						<?php the_excerpt(); ?>
+						<footer>
+							<p class="post-meta">Filed under: <a href="#"><?php echo $catName; ?></a></p>
+						</footer>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="readmore">READ MORE</a>
+					</div>
+				</div><!-- post -->
+				<?php else : ?>
+				<?php get_template_part( 'content', 'none' ); ?>
+				<?php endif; ?>
+			</div><!-- content-section -->
+			<aside class="col-sm-3 main">
+				<div class="areas col-sm-12">
+					<h5>Practice Areas</h5>
+					<?php subnav(7); ?>
+					<div class="popular">
+						<h4>Popular Posts <span></span></h4>
+						<?php 	$args = array ( 'post_type' => "post", 'posts_per_page' => 1 );
+							$custom_query = new WP_Query( $args );
+							if ( $custom_query->have_posts() ):
+							while ( $custom_query->have_posts() ) : $custom_query->the_post();
+								$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+								$thumb = wp_get_attachment_image($post_thumbnail_id, 'post-thumb' );
+								$category = get_the_category(); 
+								$catName = $category[0]->cat_name;
+							?>
+						<div class="thumb">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/books.png" alt="Books">
+						</div>
+						<h5><?php the_title(); ?></h5>
+						<div class="meta">
+							<?php the_date(); ?> * <?php comments_popup_link( '<span class="leave-reply">' . __( '0 Comments', 'clayburgess' ) . '</span>', __( '1 Comment', 'clayburgess' ), __( 'View all % comments', 'clayburgess' ) ); ?>
+						</div>
+							<?php endwhile;endif;?>
+					</div>
+					<div class="contact-form">
+						<a href="<?php bloginfo('url'); ?>/contact-us" target="" class="">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/form-box.png" alt="alt text">
+						</a>
+					</div>
+				</div><!-- areas -->
+				
+			</aside>
 		</div><!-- #content -->
 	</div><!-- #primary -->
-
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

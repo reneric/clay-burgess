@@ -13,11 +13,14 @@
 
 get_header(); ?>
 <div id="intro" class="row" role="profile">
-	<div class="inner">
+	<div class="inner flexslider">
+	<?php if(get_field('slider')): ?>
 		<ul class="slides">
-			<li style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/profile.png);">
-			</li>
+		<?php while(has_sub_field('slider')): ?>
+			<li style="background-image:url(<?php the_sub_field('slider_image'); ?>);"></li>
+		<?php endwhile; ?>
 		</ul>
+	<?php endif; ?>
 	</div>
 </div>
 	<div id="primary" class="content-area" role="profile">

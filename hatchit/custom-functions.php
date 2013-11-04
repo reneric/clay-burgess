@@ -4,6 +4,7 @@ function enqueue_scripts(){
 	wp_enqueue_style( 'bootstrap_theme', get_template_directory_uri().'/css/bootstrap-theme.css', array(), '2013-08-03' );
 	wp_enqueue_style( 'fontawesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css', array(), '2013-08-03' );
 	wp_enqueue_style( 'maincss', get_template_directory_uri().'/css/main.css', array(), '2013-08-03' );
+	wp_enqueue_style( 'flex', get_template_directory_uri().'/css/flex.css', array(), '2013-08-03' );
 	
 	//wp_enqueue_style( 'responsive', get_template_directory_uri().'/css/responsive.css', array(), '2013-08-03' );
 	wp_enqueue_style( 'lato','http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Open+Sans:400,300,600,700,800|Open+Sans+Condensed:300,700,300italic', array(), '2013-08-03' );

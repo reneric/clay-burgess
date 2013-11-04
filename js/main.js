@@ -1,5 +1,16 @@
 jQuery(function($){
 // After CSS background-image elements are loaded completely
+$chatbutton = $('#formilla-chat-button > div');
+$chat = $('#chat');
+$chat.on('click',function(){
+    Formilla.initFormillaChat();
+    console.log('click')
+})
+ $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: true,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+                directionNav: false
+              });
 $('#intro .inner ul.slides li').add('.site-title, #header-bg,#navbar-bg,.social .container .links a,div#primary-border').cssBackgroundReady(function () {
     
     this.each(function () {

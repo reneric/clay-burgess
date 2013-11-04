@@ -829,7 +829,7 @@ img.wp-smiley,
 	display: block;
 	margin: 0 auto;
 	max-width: 1080px;
-	min-height: 130px;
+	min-height: 120px;
 	padding: 1px 20px 0;
 	text-decoration: none;
 	width: 100%;
@@ -843,7 +843,7 @@ img.wp-smiley,
 	font-size: 60px;
 	font-weight: bold;
 	line-height: 1;
-	margin: 46px auto 0;
+	margin: 30px auto 0;
 	padding: 0;
 	background-image: url('img/logo.png');
 	background-repeat: no-repeat;
@@ -876,7 +876,7 @@ ul.nav-menu,
 div.nav-menu > ul {
 	margin: 0;
 	padding: 0 20px 0 0;
-	min-height: 96px;
+	min-height: 76px;
 }
 
 .nav-menu li {
@@ -888,8 +888,8 @@ div.nav-menu > ul {
 color: #141412;
 display: block;
 font-size: 20px;
-line-height: 96px;
-margin: 0 7px;
+line-height: 76px;
+margin:6px 7px 0;
 padding: 0px 20px;
 text-decoration: none;
 font-family: open sans condensed;
@@ -2048,9 +2048,16 @@ footer.entry-meta {
  * 5.10 Search Results/No posts
  * ----------------------------------------------------------------------------
  */
-
-.page-header {
-	background-color: #e8e5ce;
+#page.site .page-header{
+	margin-top: -40px;
+	margin-bottom: 15px;
+}
+.page-header,.page-header .page-title {
+	color: #ff9700;
+	margin: -10px;
+	background-color: transparent;
+	font-family: georgia;
+	font-style: italic;
 }
 
 .page-title {
@@ -2634,9 +2641,20 @@ footer.entry-meta {
 ul.nav-menu, div.nav-menu > ul{
 	padding: 0;
 }
+#main #primary #content[role="main"] aside .areas .contact-form{
+	max-width: 100%;
+	margin-left: 0;
+}
 footer .site-info{
 	padding-left: 30px;
 	padding-right: 30px;
+}
+#feeds{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+#feeds .inner .row .post .entry-meta span{
+	font-size: 15px;
 }
 #main #primary aside div.entry-content{
 	padding-right: 45px;

@@ -13,12 +13,14 @@
 
 get_header(); ?>
 <div id="intro" class="row" role="home">
-	<div class="inner">
+	<div class="inner flexslider">
+	<?php if(get_field('slider')): ?>
 		<ul class="slides">
-			<li style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/intro.jpg);">
-				
-			</li>
+		<?php while(has_sub_field('slider')): ?>
+			<li style="background-image:url(<?php the_sub_field('slider_image'); ?>);"></li>
+		<?php endwhile; ?>
 		</ul>
+	<?php endif; ?>
 	</div>
 </div>
 	<div id="primary" class="content-area" role="home">
@@ -43,7 +45,7 @@ get_header(); ?>
 						<a class="col-sm-4 accidents" href="<?php the_sub_field('url'); ?>">
 						<div class="content">
 							<div class="featured"><?php echo wp_get_attachment_image( get_sub_field('image'), 'home-thumb' , false, array('class'=>'class_name')); ?></div>
-							<h4 class="fancy"><span>Personal Injury &amp; Offshore Accidents</span></h4>
+							<h4 class="fancy"><span><?php the_sub_field('title'); ?></span></h4>
 						</div><!-- content -->
 					</a><!-- accidents -->
 					<?php 	endif;
