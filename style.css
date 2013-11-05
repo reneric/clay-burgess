@@ -2593,7 +2593,9 @@ footer.entry-meta {
 .sidebar .site-footer .widget {
 	width: 228px;
 }
-
+#category-posts{
+	display: none;
+}
 .sidebar .site-footer .widget:nth-of-type(4),
 .sidebar .site-footer .widget:nth-of-type(3) {
 	margin-right: 0;
@@ -2615,7 +2617,9 @@ footer.entry-meta {
 	padding: 30px 0;
 	width: 100%;
 }
-
+#category-posts{
+	display: none;
+}
 #wpstats {
 	display: block;
 	margin: -10px auto 0;

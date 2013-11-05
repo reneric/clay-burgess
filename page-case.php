@@ -27,32 +27,20 @@ get_header(); ?>
 		<div id="primary-border"></div>
 		<div id="primary-bg"></div>
 		<div id="content" class="site-content" role="main">
-			<div id="chat">
+			<div id="chat" style="margin-top: -170px;">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/chat.png" alt="alt text">
 			</div>
 			<aside class="col-sm-4">
 				<?php page_sidebar(); ?>
 			</aside>
 			<div class="col-sm-8 content-section">
+				<h1>Submit a Case</h1>
 				<div class="content">
-				<?php if(get_field('page_content')): ?>
-				<?php 	while(has_sub_field('page_content')): ?>	
-				<section>
-				<?php if(get_sub_field('image')){ ?>
-					<?php $thumb = wp_get_attachment_image(get_sub_field('image'), 'profile-thumb' ); ?>
-						<div id="photo-wrap" class="clearfix col-sm-4">
-							<div id="photo">
-								<?php echo $thumb; ?>
-							</div>
-						</div><!-- photo-wrap -->
-						<h1><?php the_sub_field('title'); ?></h1>
-					<?php }else{ ?>
-					<h1 style="width:100%;"><?php the_sub_field('title'); ?></h1>
-					<?php }; ?>
-					<div><?php the_sub_field('content'); ?></div>
-				</section>
-				<?php  	endwhile; ?>
-				<?php  	endif; ?>
+					<section>
+						<div class="form">
+						<?php gravity_form(2); ?>
+					</div>
+					</section>
 					<?php page_footer(); ?>
 				</div>
 			</div>

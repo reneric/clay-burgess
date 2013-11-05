@@ -26,6 +26,8 @@
 							<div class="links">
 								<a target="_blank" href="<?php the_field('facebook','options'); ?>" class="fb"></a>	
 								<a target="_blank" href="<?php the_field('linked_in','options'); ?>" class="ln"></a>
+								<a target="_blank" href="<?php the_field('twitter','options'); ?>" class="tw"></a>
+								<a target="_blank" href="<?php the_field('google','options'); ?>" class="gp"></a>
 							</div>
 							<div id="searchform">
 								<?php get_search_form(); ?>

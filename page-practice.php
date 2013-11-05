@@ -11,7 +11,10 @@
  * @since Twenty Thirteen 1.0
  */
 
-get_header(); ?>
+get_header(); 
+global $post;
+$slug = get_post( $post )->post_name;
+?>
 <div id="intro" class="row" role="practice">
 	<div class="inner">
 		<ul class="slides">
@@ -37,7 +40,7 @@ get_header(); ?>
 				</div>
 				<div class="featured col-sm-7">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/areas-featured.png" alt="alt text">
-				</div>
+				</div> 
 			</aside>
 			<div class="col-sm-8 content-section">
 				<header>
@@ -55,6 +58,30 @@ get_header(); ?>
 					</ul>
 				<?php 	endif; ?>
 				</div><!-- content -->
+				<div id="catpost clearfix">
+					<?php $args = array ( 'post_type' => "post", 'posts_per_page' => 3, 'category_name' => $slug );
+					$custom_query = new WP_Query( $args );
+					if ( $custom_query->have_posts() ):
+					while ( $custom_query->have_posts() ) : $custom_query->the_post();
+					$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+					$thumb = wp_get_attachment_image($post_thumbnail_id, 'home-post' );
+					?>
+					<div class="col-sm-4 post">
+						<a class="featured" href="<?php the_permalink(); ?>">
+							<?php echo  $thumb;?>
+						</a><!-- featured -->
+						<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+						<div class="entry-meta">
+							<span><?php the_date(); ?> * <?php comments_popup_link( '<span class="leave-reply">' . __( '0 Comments', 'clayburgess' ) . '</span>', __( '1 Comment', 'clayburgess' ), __( 'View all % comments', 'clayburgess' ) ); ?></span>
+						</div><!-- entry-meta -->
+						<a href="<?php the_permalink(); ?>">
+							<div class="excerpt">	
+								<?php the_excerpt(); ?>
+							</div>
+						</a>
+					</div><!-- post -->
+					<?php endwhile;endif; ?>
+				</div>
 				<?php page_footer(); ?>
 			</div>
 		</div><!-- #content -->

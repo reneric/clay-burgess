@@ -165,6 +165,9 @@ img{
 		
 	}
 }
+
+
+
 #primary[role="home"]{
 	padding-top: 0;
 	#content{
@@ -1090,6 +1093,55 @@ img{
 	}
 }
 //#primary[role="news"]
+#primary[role="practice"]{
+		.post{
+			margin-bottom: 30px;
+			display: block;
+			
+			&:first-child{
+				margin-left: 0;
+				padding-left: 0;
+				padding-right: 10px;
+			}
+			padding-left: 5px;
+			padding-right: 5px;
+			&:last-child{
+				margin-right: 0;
+				padding-right: 0;
+				padding-left: 10px;
+			}
+			@include font($opensans,15px,normal, $font-color);
+			a.featured{
+				img{
+					max-width: 100%;
+				}
+			}
+			h5{
+				@include font($font,19px,$bold, $font-color);
+				line-height: 20px;
+				text-transform: uppercase;
+				margin-bottom: 0;
+				margin-top: 5px;
+				a{
+					@include font($font,19px,$bold, $font-color);
+				line-height: 20px;
+				text-transform: uppercase;
+				}
+			}
+			.entry-meta{
+				font-size: 10px;
+				margin-bottom: 15px;
+				span{
+
+				}
+			}
+			a{
+				.excerpt{
+					p{@include font($opensans,15px,normal, $font-color);}
+				}
+			}
+		}
+}
 
 footer{
 	background-image: url("../img/orange-border.png");
@@ -1130,14 +1182,16 @@ footer{
 				.container{
 					.links{
 						display: block;
-						width: 148px;
+						max-width: 270px;
 						margin: 20px auto 0;
+						position: relative;
+						z-index: 9999999;
 						a{
 							display: block;
 							width: 58px;
 							height: 59px;
 							float: left;
-							margin: 10px 15px;
+							margin: 10px 6px;
 							background-repeat: no-repeat;
 							&.fb{
 								background-image: url(../img/fb.png);
@@ -1145,6 +1199,14 @@ footer{
 							}
 							&.ln{
 								background-image: url(../img/ln.png);
+								
+							}
+							&.tw{
+								background-image: url(../img/tw.png);
+								
+							}
+							&.gp{
+								background-image: url(../img/gp.png);
 								margin-right: 0;
 							}
 						}
@@ -1191,6 +1253,7 @@ footer{
 		}
 	}
 }
+
 
 
 
