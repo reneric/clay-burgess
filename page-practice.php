@@ -34,9 +34,9 @@ $slug = get_post( $post )->post_name;
 				<div class="areas col-sm-5">
 					<h5>Practice Areas</h5>
 					<?php subnav(7); ?>
-					<div class="contact-form">
+					<a class="contact-form" href="<?php bloginfo('url');?>/contact-us">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/form-box.png" alt="alt text">
-					</div>
+					</a>
 				</div>
 				<div class="featured col-sm-7">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/areas-featured.png" alt="alt text">

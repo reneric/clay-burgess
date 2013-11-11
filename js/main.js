@@ -6,6 +6,14 @@ $chat.on('click',function(){
     Formilla.initFormillaChat();
     console.log('click')
 })
+$('#primary[role="practice"] #content[role="main"] aside .areas h5').on('click',function(){
+    var $areas = $('#primary[role="practice"] #content[role="main"] aside .areas ul');
+    if($areas.hasClass('open')){
+        $areas.removeClass('open');
+    }else{
+        $areas.addClass('open');
+    }
+});
  $('.flexslider').flexslider({
                 animation: "slide",
                 controlNav: true,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage

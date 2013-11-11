@@ -862,7 +862,7 @@ img.wp-smiley,
  * 4.2 Navigation
  * ----------------------------------------------------------------------------
  */
-#wpadminbar{display: none;}
+
 .main-navigation {
 	clear: both;
 	margin: 0 auto;
@@ -2593,9 +2593,7 @@ footer.entry-meta {
 .sidebar .site-footer .widget {
 	width: 228px;
 }
-#category-posts{
-	display: none;
-}
+
 .sidebar .site-footer .widget:nth-of-type(4),
 .sidebar .site-footer .widget:nth-of-type(3) {
 	margin-right: 0;
@@ -2640,8 +2638,47 @@ footer.entry-meta {
 		border: 0;
 	}
 }
-
-@media (max-width: 1069px) {
+@media (min-width:768px) and (max-width: 910px)  {
+.menu-main-container{
+	padding-left: 10px;
+}
+.nav-menu li {
+	display: block;
+	float: left;
+	text-align: center;
+	max-width: 130px;
+}
+.nav-menu li a {
+	padding: 0px;
+	margin: 15px 10px 0;
+	font-size: 15px;
+	line-height: 20px;
+}
+}
+@media (min-width:910px) and (max-width: 1100px)  {
+.menu-main-container{
+	padding-left: 45px;
+}
+.nav-menu li {
+	display: block;
+	float: left;
+	text-align: center;
+	max-width: 130px;
+}
+.nav-menu li a {
+	padding: 0px;
+	margin: 15px 15px 0;
+	font-size: 18px;
+	line-height: 20px;
+}
+}
+@media (min-width:1100px) and (max-width: 1268px)  {
+.nav-menu li a {
+	padding: 0 13px;
+	font-size: 18px;
+}
+}
+@media (min-width:768px) and (max-width: 1268px)  {
 ul.nav-menu, div.nav-menu > ul{
 	padding: 0;
 }
@@ -2730,10 +2767,7 @@ footer .site-info{
 #main #primary[role="practice"] #content[role="main"] aside .featured img{
 	max-width: 100%;
 }
-.nav-menu li a {
-padding: 0 13px;
-font-size: 18px;
-}
+
 	.sidebar img.alignleft,
 	.sidebar .wp-caption.alignleft {
 		margin-left: 0;
@@ -2906,7 +2940,7 @@ font-size: 18px;
 	}
 }
 
-@media (max-width: 643px) {
+@media (max-width: 768px) {
 	#primary[role="practice"] {
 		padding-top: 20px;
 	}
@@ -2919,6 +2953,9 @@ font-size: 18px;
 	}
 	#primary[role="news"] #content[role="main"] .content-section .post .content .featured-single{
 		
+	}
+	#primary[role="home"] #content .row .accidents .content{
+		padding-bottom: 10px;
 	}
 	#primary[role="practice"] #content[role="main"] .content-section .content ul.practice-content.col2{
 		-webkit-column-count: 1;
@@ -3018,9 +3055,31 @@ font-size: 18px;
 		#feeds{
 		margin: 0 15px;}
 		#primary[role="home"] #content .row .accidents .content h4 {
-		margin: 5px 0 0;}
+			margin: 10px 0 0;
+			position: relative;
+		}
 		#primary #content[role="main"]{
 		margin: 0 15px;}
+		#primary[role="practice"] #content[role="main"] aside .areas ul{
+			max-height: 0;
+			overflow: hidden;
+			-webkit-transition: all 0.25s ease;
+			-moz-transition: all 0.25s ease;
+			-ms-transition: all 0.25s ease;
+			-o-transition: all 0.25s ease;
+			transition: all 0.25s ease;
+		}
+		#primary[role="practice"] #content[role="main"] aside .areas ul.open{
+			max-height: 999px;
+		}
+		#primary[role="home"] #content .row .accidents .content h4:after{
+			content: "\f0d7";
+			font-size: 12px;
+			font-family: fontawesome;
+			/*padding-left: 8px;*/
+			display: block;
+			/*vertical-align: -4px;*/
+		}	
 
 
 
@@ -3054,9 +3113,9 @@ font-size: 18px;
 	.menu-toggle {
 		cursor: pointer;
 		display: inline-block;
-		font: bold 16px/1.3 "Source Sans Pro", Helvetica, sans-serif;
+		font: bold 19px/1.3 "Source Sans Pro", Helvetica, sans-serif;
 		margin: 0;
-		padding: 12px 0 12px 20px;
+		padding: 16px 0 12px 20px;
 	}
 
 	.menu-toggle:after {
