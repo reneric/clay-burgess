@@ -20,7 +20,6 @@ $('#primary[role="practice"] #content[role="main"] aside .areas h5').on('click',
                 directionNav: false
               });
 $('#intro .inner ul.slides li').add('.site-title, #header-bg,#navbar-bg,.social .container .links a,div#primary-border').cssBackgroundReady(function () {
-    
     this.each(function () {
         $(this).css('opacity', 1);
     });

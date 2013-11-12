@@ -2966,7 +2966,10 @@ footer .site-info{
 		column-gap: 0;
 	}
 	#primary[role="practice"] #content[role="main"] aside{
-		margin-bottom:50px;
+		margin-bottom:40px;
+	}
+	#primary[role="practice"] #content[role="main"] aside .areas ul li a{
+		font-style: italic;
 	}
 	#primary[role="practice"] #content[role="main"] .content-section section.bottom p{
 		height: auto;
@@ -3060,9 +3063,13 @@ footer .site-info{
 		}
 		#primary #content[role="main"]{
 		margin: 0 15px;}
+		#primary[role="practice"] #content[role="main"] aside .areas {
+			padding-top: 1px;
+		}
 		#primary[role="practice"] #content[role="main"] aside .areas ul{
 			max-height: 0;
 			overflow: hidden;
+			margin-top: 50px;
 			-webkit-transition: all 0.25s ease;
 			-moz-transition: all 0.25s ease;
 			-ms-transition: all 0.25s ease;
@@ -3072,13 +3079,21 @@ footer .site-info{
 		#primary[role="practice"] #content[role="main"] aside .areas ul.open{
 			max-height: 999px;
 		}
-		#primary[role="home"] #content .row .accidents .content h4:after{
+		#primary[role="practice"] #content[role="main"] aside .areas > h5{
+			float: left;
+			cursor: pointer;
+			position: relative;
+		}
+		#primary[role="practice"] #content[role="main"] aside .areas > h5:after{
 			content: "\f0d7";
-			font-size: 12px;
+			font-size: 15px;
+			position: absolute;
+			right: -18px;
+			top: 2px;
 			font-family: fontawesome;
-			/*padding-left: 8px;*/
+			padding-left: 8px;
 			display: block;
-			/*vertical-align: -4px;*/
+			vertical-align: -4px;
 		}	
 
 

@@ -59,6 +59,9 @@
 	</div><!-- #page -->
 	
 	<?php wp_footer(); ?>
+
+    
+    
 	<script type="text/javascript" data-project="clay-burgess" src="http://localhost:48626/takana.js"></script>
 </body>
 </html>
