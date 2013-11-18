@@ -1,4 +1,4 @@
-\\<?php
+<?php
 /**
  * Template Name: Home
  *
@@ -34,7 +34,7 @@ get_header(); ?>
 				<div class="row">
 				<?php 	while(has_sub_field('content_row')):
 					if(get_row_layout() == "text_section"): ?>
-					<a class="col-sm-4 areas" href="<?php the_sub_field('url'); ?>">
+					<a class="col-md-4 areas" href="<?php the_sub_field('url'); ?>">
 						<h5><?php the_sub_field('title'); ?></h5>
 						<div class="content">
 							<?php the_sub_field('excerpt'); ?>
@@ -42,7 +42,7 @@ get_header(); ?>
 						<span class="more"><?php the_sub_field('more_text'); ?></span>
 					</a><!-- areas -->
 					<?php 	elseif(get_row_layout() == "image_section"): ?>
-						<a class="col-sm-4 accidents" href="<?php the_sub_field('url'); ?>">
+						<a class="col-md-4 col-xs-6 accidents" href="<?php the_sub_field('url'); ?>">
 						<div class="content">
 							<div class="featured"><?php echo wp_get_attachment_image( get_sub_field('image'), 'home-thumb' , false, array('class'=>'class_name')); ?></div>
 							<h4 class="fancy"><span><?php the_sub_field('title'); ?></span></h4>
@@ -62,15 +62,15 @@ get_header(); ?>
 							<?php the_field("news_excerpt"); ?>
 						</div>
 						<a href="<?php bloginfo('url'); ?>/news-case-studies" class="more">Read More</a>
-					</div><!-- news -->
+					</div><!-- news -->  
 					<?php $args = array ( 'post_type' => "post", 'posts_per_page' => 3 );
 					$custom_query = new WP_Query( $args );
 					if ( $custom_query->have_posts() ):
 					while ( $custom_query->have_posts() ) : $custom_query->the_post();
 					$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
 					$thumb = wp_get_attachment_image($post_thumbnail_id, 'home-post' );
-					?>
-					<div class="col-sm-3 post">
+					?> 
+					<div class="col-md-3 col-xs-4 post">
 						<div class="featured">
 							<?php echo  $thumb;?>
 						</div><!-- featured -->

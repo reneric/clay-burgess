@@ -40,14 +40,14 @@ get_header(); ?>
 				<section>
 				<?php if(get_sub_field('image')){ ?>
 					<?php $thumb = wp_get_attachment_image(get_sub_field('image'), 'profile-thumb' ); ?>
-						<div id="photo-wrap" class="clearfix col-sm-4">
+						<div id="photo-wrap" class="clearfix col-xs-6">
 							<div id="photo">
 								<?php echo $thumb; ?>
 							</div>
 						</div><!-- photo-wrap -->
 						<h1><?php the_sub_field('title'); ?></h1>
 					<?php }else{ ?>
-					<h1 style="width:100%;"><?php the_sub_field('title'); ?></h1>
+					<h1 class="col-xs-6"><?php the_sub_field('title'); ?></h1>
 					<?php }; ?>
 					<div><?php the_sub_field('content'); ?></div>
 				</section>

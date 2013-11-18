@@ -62,6 +62,6 @@
 
     
     
-	<script type="text/javascript" data-project="clay-burgess" src="http://localhost:48626/takana.js"></script>
+	<!--<script type="text/javascript" data-project="clay-burgess" src="http://localhost:48626/takana.js"></script>-->
 </body>
 </html>

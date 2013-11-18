@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ *
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages and that other
@@ -12,39 +12,53 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
+<div id="intro" class="row" role="profile">
+	<div class="inner flexslider">
+	<?php if(get_field('slider')): ?>
+		<ul class="slides">
+		<?php while(has_sub_field('slider')): ?>
+			<li style="background-image:url(<?php the_sub_field('slider_image'); ?>);"></li>
+		<?php endwhile; ?>
+		</ul>
+	<?php endif; ?>
+	</div>
+</div>
+	<div id="primary" class="content-area" role="profile">
+		<div id="primary-border"></div>
+		<div id="primary-bg"></div>
 		<div id="content" class="site-content" role="main">
-
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<header class="entry-header">
-						<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
-						<div class="entry-thumbnail">
-							<?php the_post_thumbnail(); ?>
-						</div>
-						<?php endif; ?>
-
-						<h1 class="entry-title"><?php the_title(); ?></h1>
-					</header><!-- .entry-header -->
-
-					<div class="entry-content">
-						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
-					</div><!-- .entry-content -->
-
-					<footer class="entry-meta">
-						<?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
-					</footer><!-- .entry-meta -->
-				</article><!-- #post -->
-
-				<?php comments_template(); ?>
-			<?php endwhile; ?>
-
+			<div id="chat">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/chat.png" alt="alt text">
+			</div>
+			<aside class="col-sm-4">
+				<?php page_sidebar(); ?>
+			</aside>
+			<div class="col-sm-8 content-section">
+				<div class="content">
+				<?php if(get_field('page_content')): ?>
+				<?php 	while(has_sub_field('page_content')): ?>	
+				<section>
+				<?php if(get_sub_field('image')){ ?>
+					<?php $thumb = wp_get_attachment_image(get_sub_field('image'), 'profile-thumb' ); ?>
+						<div id="photo-wrap" class="clearfix col-xs-6">
+							<div id="photo">
+								<?php echo $thumb; ?>
+							</div>
+						</div><!-- photo-wrap -->
+						<h1><?php the_sub_field('title'); ?></h1>
+					<?php }else{ ?>
+					<h1 class="col-xs-6"><?php the_sub_field('title'); ?></h1>
+					<?php }; ?>
+					<div><?php the_sub_field('content'); ?></div>
+				</section>
+				<?php  	endwhile; ?>
+				<?php  	endif; ?>
+					<?php page_footer(); ?>
+				</div>
+			</div>
 		</div><!-- #content -->
 	</div><!-- #primary -->
+	
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>
